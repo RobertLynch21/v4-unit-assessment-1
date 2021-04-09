@@ -1,0 +1,88 @@
+.flex-column {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: stretch;
+	align-content: center;
+}
+
+.main-header {
+    height: 100px;
+    width: 100%;
+    background-color: salmon;
+}
+
+.main-header h1 {
+    font-size: 48px;
+}
+
+.nav-links{
+    font-size: 24px;
+    list-style: none;
+}
+
+section nav {
+    list-style: none;
+}
+
+
+.css3 {
+    height: 150px;
+    width: 150px;
+}
+
+.html5 {
+    height: 150px;
+    width: 150px;
+}
+
+.grid-container {
+    display: grid;
+  grid-template-columns: 4.8fr 0.1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.7fr 1.3fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "container1 . . ."
+    "container1 . . ."
+    "container2 . . .";
+  }
+
+  .container1, .container2 {
+    border: black dotted 4px;;
+    margin: 20px;
+    width: 90%;
+    padding-bottom: 400px;
+    font-size: 18px;
+    padding: 20px;
+  }
+
+  .container1 { 
+      grid-area: container1;
+      height: 300px;
+
+    
+    }
+  .container2 { 
+      grid-area: container2; 
+      height: 300px;
+    }
+
+div h3 {
+        font-size: 24px;
+        font-weight: 900;
+        margin: 20px;
+    }
+
+.html5 {
+    float: left;
+
+}
+
+.css3{
+float: right;
+}
+
+p{ 
+    letter-spacing: 1px;
+}
