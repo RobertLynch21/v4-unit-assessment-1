@@ -1,3 +1,11 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 .flex-column {
 	display: flex;
 	flex-direction: row;
@@ -17,15 +25,10 @@
     font-size: 48px;
 }
 
-.nav-links{
+.nav-links {
     font-size: 24px;
     list-style: none;
 }
-
-section nav {
-    list-style: none;
-}
-
 
 .css3 {
     height: 150px;

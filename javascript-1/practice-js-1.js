@@ -1,17 +1,16 @@
 //////////////////PROBLEM 1////////////////////
 /* Create a variable called 'myName' with a value that is your name as a string. */
 
-//CODE HERE 
-
+let myName = "Robert";
 //////////////////PROBLEM 2////////////////////
 /* Create a variable called 'faveNum' with a value that is your favorite number. */
 
-//CODE HERE
+let faveNum = 13;
 
 //////////////////PROBLEM 3////////////////////
 /* Create a variable called 'lovesCode' and assign it a boolean value. */
 
-//CODE HERE
+let lovesCode = true;
 
 //////////////////PROBLEM 4////////////////////
 /*
@@ -19,7 +18,9 @@
   The function should return the sum of the two parameters.
 */
 
-//CODE HERE
+function sum(num1, num2) {
+  return num1 + num2
+};
 
 //////////////////PROBLEM 5////////////////////
 /*
@@ -29,7 +30,12 @@
   If 'data' is a falsy value, return a false boolean.
 */
 
-//CODE HERE
+function trueOrFalse(data){
+  return data ? true : false;
+  
+
+}
+
 
 //////////////////PROBLEM 6////////////////////
 /*
@@ -39,7 +45,13 @@
   If the number is even, return the string: 'the number is even'.
 */
 
-//CODE HERE
+function oddChecker(num) {
+  if (num % 2 === 0){
+    return "the number is even"
+  } else {
+    return "the number is odd"
+  }
+}
 
 //////////////////PROBLEM 7////////////////////
 /*
@@ -48,7 +60,11 @@
   "NAMEPARAM loves LOVEPARAM" with the appropriate parameters in the string. e.g. "Joseph loves music"
 */
 
-//CODE HERE
+function iLove(name, love){
+  name = "Bryan "
+  love = "loves skateboarding"
+  return name + love
+}
 
 
 //////////////////PROBLEM 8////////////////////
@@ -56,12 +72,12 @@
 
 const faveColors = ['red', 'green', 'black']
 
-//CODE HERE
+colorCopy = faveColors.slice();
 
 //////////////////PROBLEM 9////////////////////
 /* Add a fourth color to the end of the 'colorCopy' array using the push method. */
 
-//CODE HERE
+colorCopy.push("blurple")
 
 //////////////////PROBLEM 10////////////////////
 /*
@@ -69,9 +85,11 @@ const faveColors = ['red', 'green', 'black']
   numbers array that will capture only the middle numbers (2, 3, 4).
 */
 
-const numbers = [1, 2, 3, 4, 5]
+const numbers = [1, 2, 3, 4, 5];
 
-//CODE HERE
+let middleNums = numbers.slice(1, 4);
+
+
 
 //////////////////PROBLEM 11////////////////////
 /*
@@ -87,7 +105,14 @@ const numbers = [1, 2, 3, 4, 5]
   For example: 'Hello! My name is Joseph and I live in Utah"
 */
 
-//CODE HERE
+let me = {
+  firstName: "Robert",
+  state: "Florida",
+  age: 20,
+  greeter: function() {
+    return "Hello! My name is " + firstName + "and I live in " + state 
+  }
+};
 
 //////////////////PROBLEM 12////////////////////
 /* 
@@ -101,8 +126,25 @@ const numbers = [1, 2, 3, 4, 5]
   to the answers array. 
   Return the answers array inside of the function.
 */
+// return data ? true : false;
 
-// CODE HERE
+// function bigOrSmall(arr) {
+//   let answers = []
+//   for(let i = 0; i > 100; i++){
+//     if(arr > 100){
+//     answers = answers.push(arr["big"])
+//     }else {
+//     answers = answers.push(arr["small"])
+//     }
+//   }
+// };
+
+function bigOrSmall(arr){
+  let answers = answers.push(arr[""])
+  arr > 100 ? answers.push(arr["big"]) : answers.push(arr["small"]);
+  
+
+}
 
 //////////////////PROBLEM 13////////////////////
 /* 
@@ -114,7 +156,13 @@ const numbers = [1, 2, 3, 4, 5]
   Finally, return the 'reversed' array variable.
 */
 
-//CODE HERE
+function arrayReverser(arr) {
+  let reversed = []
+  for (let i = 0; i > arr.length; i--){
+    reversed = arr.push(i)
+    return reversed;
+  }
+}
 
 //////////////////PROBLEM 14////////////////////
 
